@@ -31,23 +31,23 @@ export const Services = () => {
   ];
 
   return (
-    <section className="flex w-full flex-col overflow-hidden items-stretch justify-center mt-12 lg:mt-[75px] px-4 sm:px-8 lg:px-[132px] py-8 lg:py-[67px] max-w-full">
-      <div className="w-full max-w-[1175px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-[64px] font-bold text-center lg:text-left mb-8 lg:mb-16 text-[rgba(248,228,190,1)]">
+    <section className="flex w-full flex-col overflow-hidden items-stretch justify-center px-4 sm:px-8 lg:px-[132px] py-8 lg:py-[67px] max-w-full">
+      <div className="w-full max-w-[1220px] mx-auto">
+        <h2 className="text-3xl sm:text-4xl lg:text-[64px] font-playfair font-bold mb-8 lg:mb-16 text-[rgba(248,228,190,1)] text-center">
           services
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-[40px] text-sm sm:text-base text-[rgba(248,228,190,1)] font-normal text-center">
+        <div className="flex gap-[40px_79px] text-lg font-inter font-normal text-center justify-center flex-wrap">
           {services.map((service, index) => (
             <article
               key={index}
-              className={`${service.bgColor} flex min-h-[180px] sm:min-h-[200px] lg:min-h-[225px] flex-col overflow-hidden items-center justify-between w-full px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10 rounded-[25px] sm:rounded-[30px] lg:rounded-[35px] hover:scale-105 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl`}
+              className={`${service.bgColor} flex min-h-[225px] flex-col overflow-hidden items-center justify-between w-[170px] px-8 py-10 rounded-[35px] max-md:px-5 hover:scale-105 transition-transform cursor-pointer`}
             >
               <img
                 src={service.icon}
-                className="aspect-square object-contain w-16 sm:w-20 lg:w-[107px] max-w-full mb-4"
+                className="aspect-[1] object-contain w-[107px] max-w-full"
                 alt={`${service.title} icon`}
               />
-              <div className="border border-[rgba(248,228,190,1)] border-solid px-2 py-1 rounded text-xs sm:text-sm lg:text-base">
+              <div className="border mt-[18px] border-[rgba(248,228,190,1)] border-solid px-2 py-1 text-[rgba(248,228,190,1)]">
                 {service.title}
               </div>
             </article>

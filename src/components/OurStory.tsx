@@ -30,8 +30,8 @@ export const OurStory = () => {
 
   return (
     <section className="flex w-full flex-col items-stretch justify-center px-4 sm:px-8 lg:px-[126px] py-8 lg:py-[31px] max-w-full">
-      <div className="flex w-full flex-col items-stretch max-w-full">
-        <h2 className="text-[rgba(248,228,190,1)] text-3xl sm:text-4xl lg:text-[54px] font-bold leading-tight lg:leading-[113px] z-10 mb-8 lg:mr-[78px] text-center lg:text-left">
+      <div className="w-full max-w-[1220px] mx-auto">
+        <h2 className="text-[rgba(248,228,190,1)] text-3xl sm:text-4xl lg:text-[54px] font-playfair font-bold leading-tight lg:leading-[113px] z-10 mb-8 lg:mr-[78px] text-center lg:text-left">
           our story
         </h2>
         <div className="flex w-full flex-col items-stretch justify-center px-2 py-[7px] rounded-[35px] max-w-full">
@@ -45,8 +45,8 @@ export const OurStory = () => {
                 />
               </div>
               <div className="w-full lg:w-[56%] order-1 lg:order-2 lg:ml-5">
-                <div className="flex flex-col items-stretch font-normal py-6 lg:py-8">
-                  <p className="text-white text-base sm:text-lg leading-relaxed lg:leading-[39px] mb-8 lg:mb-12 px-4 lg:px-0 text-center lg:text-left transition-all duration-500 ease-in-out">
+                <div className="flex flex-col items-stretch font-inter font-normal py-6 lg:py-8">
+                  <p className="text-white text-lg sm:text-xl leading-relaxed lg:leading-[39px] mb-8 lg:mb-12 px-4 lg:px-0 text-center lg:text-left transition-all duration-500 ease-in-out">
                     {slides[currentSlide].text}
                   </p>
                   <button className="text-white text-lg sm:text-xl leading-none underline decoration-solid capitalize border border-white border-solid px-6 py-3 rounded-lg hover:text-[rgba(218,187,158,1)] hover:bg-white/10 transition-all duration-300 w-fit mx-auto lg:mx-0">

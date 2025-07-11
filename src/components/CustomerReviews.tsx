@@ -55,8 +55,8 @@ export const CustomerReviews = () => {
 
   return (
     <section className="w-full px-4 sm:px-8 lg:px-[126px] py-12 lg:py-[75px] max-w-full">
-      <div className="w-full max-w-[1200px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-[64px] font-bold text-center mb-12 lg:mb-16 text-[rgba(248,228,190,1)]">
+      <div className="w-full max-w-[1220px] mx-auto">
+        <h2 className="text-3xl sm:text-4xl lg:text-[64px] font-playfair font-bold text-center mb-12 lg:mb-16 text-[rgba(248,228,190,1)]">
           customer reviews
         </h2>
         
@@ -75,11 +75,11 @@ export const CustomerReviews = () => {
                 {renderStars(reviews[currentReview].rating)}
               </div>
               
-              <blockquote className="text-white text-base sm:text-lg lg:text-xl leading-relaxed mb-6 lg:mb-8 italic">
+              <blockquote className="text-white text-lg sm:text-xl lg:text-xl font-inter leading-relaxed mb-6 lg:mb-8 italic">
                 "{reviews[currentReview].text}"
               </blockquote>
               
-              <cite className="text-[rgba(248,228,190,1)] text-lg sm:text-xl lg:text-2xl font-semibold not-italic">
+              <cite className="text-[rgba(248,228,190,1)] text-lg sm:text-xl lg:text-2xl font-playfair font-semibold not-italic">
                 — {reviews[currentReview].name}
               </cite>
             </div>
