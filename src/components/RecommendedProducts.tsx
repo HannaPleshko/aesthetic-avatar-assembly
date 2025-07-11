@@ -27,33 +27,33 @@ export const RecommendedProducts = () => {
   ];
 
   return (
-    <section className="flex w-full flex-col items-stretch px-4 sm:px-8 lg:px-[126px] py-8 lg:py-[31px] max-w-full">
-      <div className="w-full max-w-[1220px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-[64px] font-playfair font-bold text-center mb-8 lg:mb-12 text-[rgba(248,228,190,1)]">
+    <section className="w-full max-w-full">
+      <div className="w-full max-w-[1220px] mx-auto px-4 sm:px-8 lg:px-0 py-8 lg:py-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-[64px] font-bold text-center mb-8 lg:mb-16 text-[rgba(248,228,190,1)] font-dancing">
           recommended
         </h2>
-        <div className="flex w-full items-center gap-9 overflow-hidden text-lg text-white font-inter font-normal text-center leading-[34px] justify-center flex-wrap">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 text-base text-white font-normal text-center leading-[34px]">
           {products.map((product, index) => (
             <article
               key={index}
-              className="bg-[rgba(173,113,74,0.35)] self-stretch relative flex min-w-60 flex-col grow shrink w-[294px] my-auto rounded-[35px] hover:scale-105 transition-transform cursor-pointer"
+              className="bg-[rgba(173,113,74,0.35)] relative flex flex-col rounded-[35px] hover:scale-105 transition-transform cursor-pointer"
             >
               <img
                 src={product.image}
-                className="aspect-[1.09] object-contain w-[361px] self-center z-0 max-w-full"
+                className="aspect-[1.09] object-contain w-full"
                 alt={`${product.type} coffee`}
               />
-              <div className="bg-[rgba(255,255,255,0.15)] self-center z-0 flex min-h-[69px] w-full max-w-[367px] items-center overflow-hidden justify-between px-2.5 py-[18px] rounded-[0px_0px_35px_35px]">
-                <div className="self-stretch flex items-center gap-3 overflow-hidden justify-center my-auto">
-                  <div className="border self-stretch my-auto border-white border-solid px-2 py-1">
+              <div className="bg-[rgba(255,255,255,0.15)] flex min-h-[69px] w-full items-center overflow-hidden justify-between px-2.5 py-[18px] rounded-[0px_0px_35px_35px]">
+                <div className="flex items-center gap-3 overflow-hidden justify-center">
+                  <div className="border border-white border-solid px-2 py-1">
                     {product.type}
                   </div>
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets/cc086154295a4e38a51632f10c7dd710/208e253f1dc57423d6ec29d00f4becf9b35171d3?placeholderIfAbsent=true"
-                    className="aspect-[0.04] object-contain w-px self-stretch shrink-0 my-auto"
+                    className="aspect-[0.04] object-contain w-px"
                     alt="Separator"
                   />
-                  <div className="self-stretch my-auto">{product.roast}</div>
+                  <div>{product.roast}</div>
                 </div>
               </div>
               <button
@@ -79,9 +79,9 @@ export const RecommendedProducts = () => {
             </article>
           ))}
         </div>
-        <div className="self-center flex gap-1.5 overflow-hidden mt-[57px] px-[26px] py-[9px] max-md:mt-10 max-md:px-5">
+        <div className="flex justify-center gap-1.5 mt-8 lg:mt-16">
           <button
-            className="aspect-[1] object-contain w-[45px] shrink-0 rounded-[30px] hover:scale-110 transition-transform"
+            className="aspect-[1] object-contain w-[45px] h-[45px] rounded-[30px] hover:scale-110 transition-transform"
             aria-label="Previous products"
           >
             <img
@@ -91,7 +91,7 @@ export const RecommendedProducts = () => {
             />
           </button>
           <button
-            className="aspect-[1] object-contain w-[45px] shrink-0 hover:scale-110 transition-transform"
+            className="aspect-[1] object-contain w-[45px] h-[45px] hover:scale-110 transition-transform"
             aria-label="Next products"
           >
             <img
