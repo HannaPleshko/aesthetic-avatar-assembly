@@ -1,0 +1,118 @@
+
+.section {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: rgba(248, 228, 190, 1);
+  font-family: 'Lobster', cursive;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 1rem;
+  color: rgba(248, 228, 190, 1);
+  font-weight: normal;
+  text-align: center;
+}
+
+.serviceCard {
+  display: flex;
+  min-height: 200px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+}
+
+.serviceCard:nth-child(1) {
+  background: rgba(84, 55, 42, 1);
+}
+
+.serviceCard:nth-child(2),
+.serviceCard:nth-child(3),
+.serviceCard:nth-child(4),
+.serviceCard:nth-child(5) {
+  background: rgba(84, 55, 43, 1);
+}
+
+.serviceIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 5rem;
+  max-width: 100%;
+}
+
+.serviceTitle {
+  border: 1px solid rgba(248, 228, 190, 1);
+  margin-top: 1rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 4rem 0;
+  }
+  
+  .title {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .serviceCard {
+    min-height: 225px;
+    padding: 2.5rem 2rem;
+  }
+  
+  .serviceIcon {
+    width: 107px;
+  }
+  
+  .serviceTitle {
+    font-size: 1rem;
+    margin-top: 18px;
+  }
+}
